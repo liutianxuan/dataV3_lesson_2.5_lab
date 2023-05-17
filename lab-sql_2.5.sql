@@ -39,7 +39,8 @@ WHERE title LIKE '%ARMAGEDDON%';
 
 # 11. Get all films which title ends with APOLLO.
 SELECT * FROM film
-WHERE RIGHT(title,LENGTH('APOLLO')) = 'APOLLO';
+-- WHERE RIGHT(title,LENGTH('APOLLO')) = 'APOLLO';
+WHERE title LIKE '%APOLLO';
 
 # 12. Get 10 the longest films.
 SELECT title, length FROM film
